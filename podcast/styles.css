@@ -6,10 +6,10 @@
 .header {
     background-color: white;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0, 0.1);
-    position: fixed;
     width: 100%;
     z-index: 3;
     font-family: 'IBM Plex Mono' , sans-serif;
+    flex-direction: row;
 }
 
 .header ul {
@@ -20,8 +20,7 @@
 }
 
 .header ul a {
-    display:block;
-    
+    display: inline-block;
     padding: 20px;
     text-decoration: none;
     color: black;
@@ -48,7 +47,6 @@
 .header .menu-icon {
     border: 1px solid rgb(15, 13, 13);
     padding: 28px 20px;
-    position: relative;
     float: right;
 }
 
@@ -127,7 +125,14 @@
 }
 
 body {
-    overflow: visible;
+    
+    display: inline-block;
+}
+
+main {
+    clear: both;
+    position: relative;
+    top: 20px;
 }
 h1 {
     background-color: white;
